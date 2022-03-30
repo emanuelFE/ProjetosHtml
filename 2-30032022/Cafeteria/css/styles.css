@@ -1,0 +1,74 @@
+/*
+arquivo css para formatação do site da cafeteria
+*/
+
+/*
+aplicar a formatação a todos os elmentos. usarems o asterisco(*)
+
+*/
+
+* {
+  /*  zerar as margens externas dos elementos */
+  margin: 0;
+  /* zerar as margens internas do elementos  */
+  padding: 0;
+  /* ajuste das caixas(box) dos elementos */
+  box-sizing: border-box;
+}
+
+header {
+  height: 300px;
+  /* altura da caixa */
+  /* adicionaar uma imagem ao fundo  */
+  background-image: url("../img/cafeteria5.jpg");
+  /* ajustar a largura da imagem em 100% */
+  background-size: 100%;
+  /* ajustar a posiçao em x e y da imagem de fundo */
+  background-position: 0 -500px;
+  /* animação no fundo */
+  transition: ease 0.5s;
+}
+h1 {
+  text-align: center;
+  font-family: "verdana";
+  color: green;
+  /* aplicar uma sombra no texto */
+  text-shadow: 10px 10px 20px white;
+}
+
+nav {
+  background-color: black;
+  text-align: center;
+}
+
+nav ul li {
+  /* dispor os itens da lista (li) em linha  */
+  display: inline-block;
+  /* aumentar as distancia entre os elmentos */
+  padding: 5px;
+  transition: ease 0.5s;
+}
+nav ul li:hover {
+  background-color: white;
+}
+
+nav ul li a {
+  font-family: "vernada";
+  font-size: 20pt;
+  color: blue;
+  /* retirar o underline do link */
+  text-decoration: none;
+  /* nenhum */
+}
+
+footer {
+  height: 500px;
+  /* altura em 300px */
+  background-color: black;
+  color: blue;
+  font-family: "arial";
+  padding-top: 50px;
+  /* dispor de froma flexivel e em linha */
+  display: flex;
+  flex-direction: row;
+}
