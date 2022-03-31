@@ -31,7 +31,7 @@ header {
 h1 {
   text-align: center;
   font-family: "verdana";
-  color: green;
+  color: rgb(182, 128, 12);
   /* aplicar uma sombra no texto */
   text-shadow: 10px 10px 20px white;
 }
@@ -55,7 +55,7 @@ nav ul li:hover {
 nav ul li a {
   font-family: "vernada";
   font-size: 20pt;
-  color: blue;
+  color: rgb(167, 120, 32);
   /* retirar o underline do link */
   text-decoration: none;
   /* nenhum */
@@ -64,8 +64,8 @@ nav ul li a {
 footer {
   height: 500px;
   /* altura em 300px */
-  background-color: black;
-  color: blue;
+  background-color: rgba(226, 175, 5, 0.452);
+  color: rgb(199, 96, 12);
   font-family: "arial";
   padding-top: 50px;
   /* dispor de froma flexivel e em linha */
@@ -88,4 +88,43 @@ footer div {
 #redes ul li a img {
   width: 50px;
   height: 50px;
+}
+
+/* ..............inicio do css da home..................... */
+h2 {
+  font-family: "arial";
+  font-size: 20pt;
+  margin: 50px;
+  /* borda na parte inferior(bottom) do h2 */
+  border-bottom: 1px solid black;
+  width: 300px;
+}
+
+#home p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana;
+  font-size: 12pt;
+  line-height: 20pt;
+  /* espaçamento das linhas line-height */
+  text-align: justify;
+}
+
+#imgHome {
+  text-align: center;
+}
+
+#imgHome img {
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+  transition: ease 0.5s;
+  /* mudar o ponteiro do mouse para uma mao */
+  cursor: pointer;
+}
+
+#imgHome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
 }
