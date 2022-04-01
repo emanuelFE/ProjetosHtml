@@ -194,3 +194,46 @@ h3 {
   color: black;
   font-weight: bold;
 }
+/* ------------Formatção do css para a pagina contado-------------- */
+main form {
+  width: 40%;
+  padding: 10px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+main form input[type="text"],
+main form input[type="E-mail"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  background-color: rgb(197, 134, 18);
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 1px solid silver;
+  border-radius: 5px;
+  display: block;
+  font-weight: bold;
+}
+main form input[type="tel"] main form select {
+  width: 30%;
+  background-color: white;
+}
+main form textarea {
+  height: 250px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: whitesmoke;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(197, 131, 8);
+  margin-left: 43%;
+}
