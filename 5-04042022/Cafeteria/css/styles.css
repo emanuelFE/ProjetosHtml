@@ -28,6 +28,13 @@ header {
   /* animação no fundo */
   transition: ease 1s;
 }
+
+header a,
+#fechar {
+  opacity: 0;
+  transition: ease 0.5s;
+}
+
 h1 {
   text-align: center;
   font-family: "verdana";
@@ -39,6 +46,7 @@ h1 {
 nav {
   background-color: black;
   text-align: center;
+  transition: ease 0.5s;
 }
 
 nav ul li {
@@ -275,34 +283,65 @@ main form input[type="submit"] {
     margin: auto;
   }
 
+  header a {
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 15pt;
+  }
+  #fechar {
+    opacity: 1;
+    color: white;
+    font-size: 25pt;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    transform: rotate(180deg);
+  }
+  iframe {
+    width: 90%;
+  }
+  main form {
+    width: 90%;
+  }
+  #mapa iframe {
+    width: 95%;
+  }
+
   body {
-    background-color: red;
+    background-color: white;
   }
 }
 
 @media (min-width: 576px) {
   body {
-    background-color: green;
+    background-color: white;
   }
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 767.98px) {
   body {
-    background-color: blue;
+    background-color: white;
   }
 }
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 991.98px) {
   body {
-    background-color: firebrick;
+    background-color: white;
   }
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1199.98px) {
   body {
-    background-color: green;
+    background-color: white;
   }
 }
